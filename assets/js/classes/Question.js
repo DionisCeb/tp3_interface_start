@@ -1,19 +1,19 @@
-// function afficherQuestion(question) {
-//   let clone = template.content.cloneNode(true);
-//   quizConteneur.appendChild(clone);
+/* function afficherQuestion(question) {
+   let clone = template.content.cloneNode(true);
+   quizConteneur.appendChild(clone);
 
-//   const questionHTML = quizConteneur.lastElementChild;
-//   const titre = questionHTML.querySelector(".question__titre");
-//   const options = questionHTML.querySelector(".question__options");
+   const questionHTML = quizConteneur.lastElementChild;
+   const titre = questionHTML.querySelector(".question__titre");
+   const options = questionHTML.querySelector(".question__options");
 
-//   titre.textContent = question.question;
+   titre.textContent = question.question;
 
-//   let boutonsReponses = "";
-//   question.reponses.forEach(function (reponse) {
-//     boutonsReponses += `<li class="bouton">${reponse}</li>`;
-//   });
-//   options.innerHTML = boutonsReponses;
-// }
+   let boutonsReponses = "";
+   question.reponses.forEach(function (reponse) {
+     boutonsReponses += `<li class="bouton">${reponse}</li>`;
+   });
+   options.innerHTML = boutonsReponses;
+ } */
 
 class Question {
     constructor() {

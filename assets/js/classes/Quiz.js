@@ -99,6 +99,6 @@ class Quiz {
 
         return scoresTableau;
     }
-}
+} 
 
 export default Quiz;

@@ -1,5 +1,6 @@
 import { init as navigationInit } from "../modules/navigation.js";
 import { questions, messages } from "../donnees/questionsQuiz.js";
+import Quiz from "../classes/Quiz.js";
 
 let reponsesQuiz = [];
 let indexQuestionCourante = 0;
@@ -9,6 +10,7 @@ const quizMessageConteneur = document.querySelector(".quiz-message-conteneur");
 
 function init() {
   navigationInit();
+  /* new Quiz(); */
 
   demarrerQuiz();
   afficherMessage("Bienvenue au quiz!");
