@@ -16,23 +16,21 @@ class Quiz {
 
     this.indexQuestionActuelle = 0; // L'index de la question
     this.questionActuelle; // L'instance de la question actuelle
-    s;
+
     this.conteneurPointage = document.querySelector(".pointage");
-    this.pointage = new Pointage(0, this.conteneurPointage);
-    this.pointage.afficherPoints();
+    // this.pointage = new Pointage(0, this.conteneurPointage);
+    // this.pointage.afficherPoints();
 
     //Sélectionner les éléments HTML nécessaires
     this.panneauDebutHTML = document.querySelector(".quiz-panneau-debut");
-    this.boutonDemarrageQuiz = this.panneauDebutHTML.querySelector(".bouton");
+    this.boutonDemarrageQuiz;
     this.panneauFinHTML = document.querySelector(".quiz-panneau-fin");
     this.panneauQuestionHTML = document.querySelector(".quiz-conteneur");
     this.messageConteneur;
 
+    this.cacherPanneaux();
+    this.afficherPanneau(this.panneauDebutHTML); /**section*/
     //Ajouter les écouteurs d'événements ici
-    this.boutonDemarrageQuiz.addEventListener(
-      "click",
-      this.prochaineQuestion.bind(this)
-    );
   }
 
   // ====================
@@ -54,8 +52,6 @@ class Quiz {
   // GESTION DES QUESTIONS ET DU QUIZ
   demarrerQuiz() {
     // Afficher le panneau de début
-    this.cacherPanneaux();
-    this.afficherPanneau(this.panneauDebutHTML);
     // Afficher la première question
     //
     // OPTIONNEL: Afficher les scores des utilisateurs précédents
